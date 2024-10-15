@@ -76,6 +76,7 @@ for (let i = 5; i >= 0; i--) {
   console.log(i);
 }
 //boucle while
+
 while (i <= 5) {
   console.log(i);
   /*i++
@@ -102,7 +103,7 @@ for (let i = nom.length; i >= 0; i--) {
 }
 
 //lesfonctions
-let reversedString = reverseString(nom);
+let reversedString = reversedString(nom);
 function nomDeLaFunction(nom) {
   let reversedString;
   for (let i = nom.length; i >= 0; i--) {
