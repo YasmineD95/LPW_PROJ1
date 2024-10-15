@@ -39,6 +39,13 @@ class CompteEpargne {
       }% ajoutés. Nouveau solde : ${this.solde.toFixed(2)} euros.`
     );
   }
+  //je crée la methode pour afficher l'historique
+  afficherHistorique() {
+    console.log("Historique des opérations :");
+    this.historiqueOperations.forEach((operation) => {
+      console.log(operation);
+    });
+  }
 }
 const compte = new CompteEpargne(0.03, 1000);
 compte.depot(200);
@@ -46,3 +53,4 @@ compte.retrait(150);
 compte.depot(500);
 compte.retrait(800);
 compte.calculInterets();
+compte.afficherHistorique();
